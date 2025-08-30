@@ -2,27 +2,37 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>買っっっってクレープ</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Yomogi&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>3-4 買って\nクレープ</h1>
-    <!-- TODO 画像表示 -->
-    <h2>これまでの販売数</h2>
-    <!-- TODO 販売数表示 -->
-    <p>読み込み中！❤️</p>
-    <p id="salesNumberDisplay"></p>
-    <p id="salesNumberDisplay_unit">個</p>
-    <p>おいしいクレープを販売中</p>
-    <button>MEN\nU</button>
-    <button>アレルゲン</button>
-    <button>COST\nPLICE</button>
-    <button>クレー\nプクイ\nズ</button>
-    <p>コミュニケーションコートで10時30分から販売します！！</p>
-    <p>3-4ではアイスクレープを販売します!味はいちご、チョコ、ブルーベリー、ヨーグルト、みかんの5種類!</p>
-    <!-- TODO 地図画像を置く -->
-    <a href="">食販全体の特集サイト(まとも)はこちら！</a>
-    <!-- ボタンを押したときに遅れて表示される案内 -->
-    <p id="message"></p>
+    <div id="page1">
+      <h1>3-4 買って\nクレープ</h1>
+      <!-- TODO 画像表示 -->
+      <h2 id="head_nowSaledNumber">これまでの販売数</h2>
+      <!-- TODO 販売数表示 -->
+      <div id="salesNumberDisplayContainer">  
+        <p id="salesNumberDisplay">読み込み中！❤️</p>
+        <p id="salesNumberDisplay2">読み込み中！❤️</p>
+      </div>
+      <p id="salesNumberDisplay_unit">個</p>
+      <p id="catchCopy">おいしいクレープを販売中！！！</p>
+      <button id="Button_menu">MEN<br>U</button>
+      <button id="Button_allergen">アレルゲン</button>
+      <button id="Button_costPrice">COST<br>PLICE</button>
+      <button id="Button_quiz"><span>クレー<br>プクイ<br>ズ</span></button>
+      <p id="PR1" class="PR">コミュニケーションコートで10時30分から販売します！！</p>
+      <p id="PR2" class="PR">3-4ではアイスクレープを販売します!味はいちご、チョコ、ブルーベリー、ヨーグルト、みかんの5種類!</p>
+      <!-- TODO 地図画像を置く -->
+      <a id="link_toPortal" href="">食販全体の特集サイト(まとも)はこちら！</a>
+      <!-- ボタンを押したときに遅れて表示される案内 -->
+      <p id="message"></p>
+    </div>
     <div>
       <p>メニュー：クレープを販売しています！(ヨーグルト味、1５0円、ブルーベリー味、1５0円、チョコ味、1５0円、みかん味、1５0円、イチゴ味、1５0円)です！</p>
     </div>

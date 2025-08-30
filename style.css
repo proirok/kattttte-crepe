@@ -1,0 +1,139 @@
+html, body{
+    background-color: black;
+}
+*{
+    color:white;
+    margin:0;
+    font-family: sans-serif;
+}
+#page1{
+    position:relative;
+    width:100vw;
+    height:100svh;
+}
+h1{
+    font-size: 120%;
+    transform: scale(1, 2.5);
+    -webkit-text-stroke: 1.5px red;
+
+    color:white;
+}
+#head_nowSaledNumber{
+    color:#0F0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#salesNumberDisplayContainer{
+    position: relative;
+}
+#salesNumberDisplay{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 
+    4px 0px 0px #0F0,
+    -4px 0px 0px #0F0,
+    0px 4px 0px #0F0,
+    0px -4px 0px #0F0;
+}
+#salesNumberDisplay2{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(
+        90deg,
+        hsl(300deg, 100%, 50%),
+        hsl(230deg, 100%, 50%),
+        hsl(100deg, 100%, 50%),
+        hsl(60deg, 100%, 50%),
+        hsl(30deg, 100%, 50%),
+        hsl(0deg, 100%, 50%),
+        hsl(30deg, 100%, 50%),
+        hsl(60deg, 100%, 50%),
+        hsl(100deg, 100%, 50%),
+        hsl(230deg, 100%, 50%),
+        hsl(300deg, 100%, 50%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#salesNumberDisplay_unit{
+    font-size: 3rem;
+    color:magenta;
+}
+.PR{
+    font-family: "DotGothic16", sans-serif;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+#PR1{
+    width:6em;
+}
+#PR2{
+    width:6em;
+}
+#catchCopy{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-family: serif;
+    color:yellow;
+    filter: drop-shadow(2px 15px 1px magenta);
+}
+
+/* ボタン */
+button{
+    font-family: serif;
+    font-size: 1.2rem;
+    border-radius: 25%;
+}
+#Button_menu{
+    position:absolute;
+    top: 0%;
+    right:5%;
+    background-color: orange;
+    text-align: left;
+    padding:10px;
+    color: blue;
+    border:4px dashed blue;
+}
+#Button_allergen{
+    position:absolute;
+    top:20%;
+    left:70%;
+    background-color: transparent;
+    text-align: left;
+    padding:10px;
+    color: yellow;
+    border:4px solid blue;
+}
+#Button_costPrice{
+    position:absolute;
+    top: 35%;
+    right:5%;
+    background-color: #90F;
+    text-align: left;
+    padding:10px;
+    color: #0F0;
+    border:4px dashed red;
+}
+#Button_quiz{
+    position:absolute;
+    bottom: 4em;
+    right:0;
+    height: 2em;
+    background-color: #F0F;
+    padding:10px;
+    border:4px dashed blue;
+}
+#Button_quiz > span{
+    font-family: "Yomogi", cursive;
+    color: yellow;
+    text-align: left;
+}
+#link_toPortal{
+    color:magenta;
+}
