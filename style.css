@@ -1,139 +1,168 @@
-html, body{
-    background-color: black;
+:root{
+    --background-color1:#ffe599;
+    --text-color:#434343;
+    --text-color-sub:#999999;
+    --accent-color:#ff00ff;
+    --distarbing-color:#4a86e8;
+    --magenta-shadow:hsl(300deg, 70%, 50%, 80%);
 }
 *{
-    color:white;
     margin:0;
     font-family: sans-serif;
+}
+html, body{
+    background-color: var(--background-color1);
+}
+strong{
+    color:red;
+    font-weight: 400;
+}
+.spacer{
+    height:600px;
 }
 #page1{
     position:relative;
     width:100vw;
     height:100svh;
 }
+#wraper_1{
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    z-index:1;
+    width:96%;
+}
 h1{
     font-size: 120%;
-    transform: scale(1, 2.5);
-    -webkit-text-stroke: 1.5px red;
-
-    color:white;
 }
 #head_nowSaledNumber{
-    color:#0F0;
+    color:var(--text-color-sub);
     font-size: 1.2rem;
     font-weight: 400;
 }
 #salesNumberDisplayContainer{
     position: relative;
+    font-size: 2.4rem;
+    width:4.5em;
+    height: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
 }
 #salesNumberDisplay{
-    position:absolute;
-    top:0;
-    left:0;
+    position:relative;
+    white-space: pre;
     font-size: 3rem;
     font-weight: 900;
-    text-shadow: 
-    4px 0px 0px #0F0,
-    -4px 0px 0px #0F0,
-    0px 4px 0px #0F0,
-    0px -4px 0px #0F0;
-}
-#salesNumberDisplay2{
-    position:absolute;
-    top:0;
-    left:0;
-    font-size: 3rem;
-    font-weight: 900;
-    background: linear-gradient(
-        90deg,
-        hsl(300deg, 100%, 50%),
-        hsl(230deg, 100%, 50%),
-        hsl(100deg, 100%, 50%),
-        hsl(60deg, 100%, 50%),
-        hsl(30deg, 100%, 50%),
-        hsl(0deg, 100%, 50%),
-        hsl(30deg, 100%, 50%),
-        hsl(60deg, 100%, 50%),
-        hsl(100deg, 100%, 50%),
-        hsl(230deg, 100%, 50%),
-        hsl(300deg, 100%, 50%));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:var(--text-color-sub);
 }
 #salesNumberDisplay_unit{
     font-size: 3rem;
     color:magenta;
 }
-.PR{
-    font-family: "DotGothic16", sans-serif;
-    display: inline-block;
-    font-size: 1.2rem;
-}
 #PR1{
-    width:6em;
-}
-#PR2{
-    width:6em;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 1.2rem;
 }
 #catchCopy{
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: bold;
     font-family: serif;
-    color:yellow;
-    filter: drop-shadow(2px 15px 1px magenta);
+    color:var(--text-color);
+    filter: drop-shadow(2px 15px 2px var(--magenta-shadow));
 }
-
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
 /* ボタン */
 button{
     font-family: serif;
     font-size: 1.2rem;
     border-radius: 25%;
+    background-color: #f3f3f3;
+    border-color: #434343;
+    color:black;
 }
 #Button_menu{
-    position:absolute;
-    top: 0%;
-    right:5%;
-    background-color: orange;
     text-align: left;
     padding:10px;
-    color: blue;
-    border:4px dashed blue;
+    border:2px dashed;
 }
 #Button_allergen{
-    position:absolute;
-    top:20%;
-    left:70%;
-    background-color: transparent;
+    position: relative;
+    left:10px;
     text-align: left;
     padding:10px;
-    color: yellow;
-    border:4px solid blue;
+    border:2px solid ;
 }
 #Button_costPrice{
-    position:absolute;
-    top: 35%;
-    right:5%;
-    background-color: #90F;
+    margin:10px;
     text-align: left;
     padding:10px;
-    color: #0F0;
-    border:4px dashed red;
+    border:2px dashed;
 }
 #Button_quiz{
-    position:absolute;
-    bottom: 4em;
-    right:0;
-    height: 2em;
-    background-color: #F0F;
-    padding:10px;
-    border:4px dashed blue;
-}
-#Button_quiz > span{
+    border:4px solid blue;
+    font-weight: bolder;
     font-family: "Yomogi", cursive;
     color: yellow;
+    border-color: blue;
+    background-color: magenta;
     text-align: left;
+}
+#wraper_2{
+    position:absolute;
+    bottom: 0;
+    z-index:0;
+}
+#image_img{
+    width:75vw;
+    aspect-ratio: 4 / 3;
 }
 #link_toPortal{
     color:magenta;
+}
+#map{
+    width:65vw;
+}
+#message{
+    font-size: 1.4rem;
+    color:var(--distarbing-color)
+}
+/* 追加要素 */
+.additionalInfo{
+    display: none;
+    font-size: 1.2rem;
+}
+#allergen_info{
+    width:100vw;
+}
+#allergenTable_container{
+    overflow-x: scroll;
+    background-color: white;
+    padding: 20px;
+}
+#allergenTable_container *{
+    font-family: "Noto Sans JP", sans-serif;
+}
+table{
+    width:140vw;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #232346;
+    color:white;
+}
+caption{
+    font-weight: bold;
+}
+th, td{
+    border:1px solid #999999;
+    padding:10px 5px;
+}
+
+tbody > tr:nth-of-type(even){
+    background-color: #fcfcfc;
 }
