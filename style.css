@@ -84,6 +84,7 @@ button{
     background-color: #f3f3f3;
     border-color: #434343;
     color:black;
+    z-index:3
 }
 #Button_menu{
     text-align: left;
