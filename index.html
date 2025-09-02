@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>買っっっってクレープ</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <h1>買ってクレープのサイト</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>買っっっってクレープ</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Noto+Sans+JP:wght@100..900&family=Yomogi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="page1">
+    <div id="wraper_1">
+      <div id="texts">
+        <h1>3- 4 買ってクレープ<br>特設サイト</h1>
+        <h2 id="head_nowSaledNumber">これまでの販売数</h2>
+        <!-- TODO 販売数表示 -->
+        <div id="salesNumberDisplayContainer">
+          <span id="salesNumberDisplay">読み込み中</span>
+          <span id="salesNumberDisplay_unit">個</span>
+        </div>
+        <p id="catchCopy">おいしいクレープを<br>販売中！！！</p>
+      </div>
+      <div id="buttons">
+        <button id="Button_menu" onclick="menu_onclick()">MENU</button>
+        <button id="Button_allergen" onclick="allergen_onclick()">アレルゲン</button>
+        <button id="Button_costPrice" onclick="costPrice_onclick()">COST<br>PLICE</button>
+      </div>
+    </div>
+    <div id="wraper_2">
+      <img id="image_img" src="https://lh3.googleusercontent.com/d/1bjbuYME0q4H0U-u8ikkRt4NBqHtLpXjp" />
+      <a id="link_toPortal" href="">食販全体の特集サイト(まとも)はこちら！</a>
+      <p id="PR1">コミュニケーションコートで10時30分から販売します！！<strong id="countdown">[あと〇〇分だよ!]</strong></p>
+      <button id="Button_quiz" onclick="letsQuiz_onclick()">クレープ<br>クイズ</button>
+      <img id="map" src="https://lh3.googleusercontent.com/d/1XQXslRzq8bv-bR5dRZlymaEuixsR_WkN" />
+      <p id="message"></p>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="additionalInfo" id="menu_info">
+    <h2>メニュー</h2>
+      ヨーグルト味、150円<br>
+      ブルーベリー味、150円<br>
+      チョコ味、150円<br>
+      みかん味、150円<br>
+      イチゴ味、150円
+    </p>
+  </div>
+  <div class="additionalInfo" id="allergen_info">
+    <h2>アレルギー情報</h2>
+    <p>はみ出る場合、横にスクロールできます<br></p>
+    <div id="allergenTable_container">
+      <table>
+        <caption>アレルギー情報</caption>
+        <thead>
+          <tr>
+            <th>商品名</th>
+            <th>特定原材料<br>（8品目）</th>
+            <th>特定原材料に準ずるもの<br>（20品目）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ヨーグルト味</th>
+            <td>未記入</td>
+            <td>未記入</td>
+          </tr>
+          <tr>
+            <th>ブルーベリー味</th>
+            <td>未記入</td>
+            <td>未記入</td>
+          </tr>
+          <tr>
+            <th>チョコ味</th>
+            <td>未記入</td>
+            <td>未記入</td>
+          </tr>
+          <tr>
+            <th>みかん味</th>
+            <td>未記入</td>
+            <td>未記入</td>
+          </tr>
+          <tr>
+            <th>いちご味</th>
+            <td>未記入</td>
+            <td>未記入</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="additionalInfo" id="costPrice_info">
+    <h2>原価</h2>
+    <p>秘密です！</p>
+  </div>
+  <div class="additionalInfo" id="Quiz">
+    <h2>クレープクイズ！！</h2>
+  </div>
+  <div class="spacer"></div>
+  <script src="action.js"></script>
+</body>
+
 </html>
