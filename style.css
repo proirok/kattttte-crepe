@@ -23,7 +23,7 @@ strong{
 #page1{
     position:relative;
     width:100vw;
-    height:100svh;
+    height:100vh;
 }
 #wraper_1{
     position: absolute;
@@ -37,14 +37,14 @@ h1{
     font-size: 120%;
 }
 #head_nowSaledNumber{
-    color:var(--text-color-sub);
+    color:var(--distarbing-color);
     font-size: 1.2rem;
     font-weight: 400;
 }
 #salesNumberDisplayContainer{
     position: relative;
     font-size: 2.4rem;
-    width:4.5em;
+    width:3.5em;
     height: 2em;
     background-color: white;
     display: flex;
@@ -55,7 +55,7 @@ h1{
     white-space: pre;
     font-size: 3rem;
     font-weight: 900;
-    color:var(--text-color-sub);
+    color:#0f0;
 }
 #salesNumberDisplay_unit{
     font-size: 3rem;
@@ -84,7 +84,8 @@ button{
     background-color: #f3f3f3;
     border-color: #434343;
     color:black;
-    z-index:3
+    z-index:3;
+    box-shadow:0px 4px 2px #000000cc;
 }
 #Button_menu{
     text-align: left;
@@ -119,18 +120,19 @@ button{
     z-index:0;
 }
 #image_img{
-    width:75vw;
+    width:min(75vw,400px);
     aspect-ratio: 4 / 3;
 }
 #link_toPortal{
     color:magenta;
 }
 #map{
-    width:65vw;
+    width:min(65vw,350px);
 }
 #message{
     font-size: 1.4rem;
-    color:var(--distarbing-color)
+    color:var(--distarbing-color);
+    font-family:"Dela Gothic One";
 }
 /* 追加要素 */
 .additionalInfo{
@@ -149,7 +151,7 @@ button{
     font-family: "Noto Sans JP", sans-serif;
 }
 table{
-    width:140vw;
+    width:min(140vw,500px);
     border-collapse: collapse;
 }
 thead{
