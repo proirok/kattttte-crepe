@@ -33,13 +33,18 @@ strong{
     z-index:1;
     width:96%;
 }
+#texts{
+    width:min(600px, 70vw);
+}
 h1{
-    font-size: 120%;
+    font-weight:800;
+    margin: left 10px;
+    animation: 4s infinite alternate rain_Booom;
 }
 #head_nowSaledNumber{
     color:var(--distarbing-color);
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: bold;
 }
 #salesNumberDisplayContainer{
     position: relative;
@@ -61,7 +66,7 @@ h1{
     font-size: 3rem;
     color:magenta;
 }
-#PR1{
+#PR1_text{
     font-family: "DotGothic16", sans-serif;
     font-size: 1.2rem;
 }
@@ -85,7 +90,8 @@ button{
     border-color: #434343;
     color:black;
     z-index:3;
-    box-shadow:0px 4px 2px #000000cc;
+    animation: 1s infinite alternate rainbowShadow;
+    animation: 2s infinite alternate blinking;
 }
 #Button_menu{
     text-align: left;
@@ -168,4 +174,34 @@ th, td{
 
 tbody > tr:nth-of-type(even){
     background-color: #fcfcfc;
+}
+
+@keyframes blinking {
+  from {
+    opacity:0.2;
+  }
+
+  to {
+    opacity:1;
+  }
+}
+
+@keyframes sliding {
+  from {
+    margin-left:80%;
+  }
+
+  to {
+    margin-left:0;
+  }
+}
+@keyframes rain_Booom{
+    0%{margin-left:80%;color: hsl(0deg, 90%, 40%)}
+    14%{color:  hsl(30deg, 90%, 40%)}
+    28%{color:  hsl(70deg, 90%, 40%)}
+    42%{color:  hsl(100deg, 90%, 40%)}
+    56%{color:  hsl(230deg, 90%, 40%)}
+    70%{color:  hsl(300deg, 90%, 40%)}
+    85%{color:  hsl(360deg, 90%, 40%)}
+    100%{margin-left:0%;color: #e60000}
 }

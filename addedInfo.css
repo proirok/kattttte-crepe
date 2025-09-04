@@ -1,0 +1,29 @@
+.additionalInfo{
+    font-size: 1rem;
+}
+.additionalInfo h2{
+    color:var(--distarbing-color);
+    font-size:2rem;
+}
+#menu_info > p{
+    font-family:"Dela Gothic One";
+    box-shadow:0px 2px 4px #808080;
+    background-color:green;
+    font-size:2rem;
+    margin:10px;
+}
+#menu_1{
+    color:#ff0;
+}
+#menu_2{
+    color:#ccf;
+}
+#menu_3{
+    color:#fcc;
+}
+#menu_4{
+    color:#f5f;
+}
+#menu_5{
+    color:#0ff;
+}

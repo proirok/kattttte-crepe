@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>買っっっってクレープ</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="addedInfo.css">
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
       <a id="link_toPortal" target="_blank" href="https://awkward-order.latimeria.workers.dev/">
         食販全体の特集サイト(まとも)はこちら！
       </a>
-      <p id="PR1">コミュニケーションコートで10時30分から販売します！！<strong id="countdown">[あと〇〇分だよ!]</strong></p>
+      <p id="PR1"><span id="PR1_text">コミュニケーションコートで10時30分から販売します！！</span><strong id="countdown">[あと〇〇分だよ!]</strong></p>
       <button id="Button_quiz" onclick="letsQuiz_onclick()">クレープ<br>クイズ</button>
       <img id="map" src="https://lh3.googleusercontent.com/d/1XQXslRzq8bv-bR5dRZlymaEuixsR_WkN" />
       <p id="message"></p>
@@ -44,12 +45,11 @@
   <div class="spacer"></div>
   <div class="additionalInfo" id="menu_info">
     <h2>メニュー</h2>
-      ヨーグルト味、150円<br>
-      ブルーベリー味、150円<br>
-      チョコ味、150円<br>
-      みかん味、150円<br>
-      イチゴ味、150円
-    </p>
+      <p id="menu_1">ヨーグルト味、150円</p>
+      <p id="menu_2">ブルーベリー味、150円</p>
+      <p id="menu_3">チョコ味、150円</p>
+      <p id="menu_4">みかん味、150円</p>
+      <p id="menu_5">イチゴ味、150円</p>
   </div>
   <div class="additionalInfo" id="allergen_info">
     <h2>アレルギー情報</h2>

@@ -69,11 +69,16 @@ function all_close(){
 }
 function countdown_display(){
     const now = new Date()
+    const day0_open = new Date('2025-09-05T12:00+09:00')
     const day1_open = new Date('2025-09-06T10:30+09:00')
     const day2_open = new Date('2025-09-07T10:30+09:00')
 
     const countdown_el = document.getElementById("countdown")
-    if(now < day1_open || now.getDate() == 6){
+    if(now < day0_open || now.getDate() == 5){
+        document.getElementById("PR1_text").textContent="コミュニケーションコートで12時00分から販売します！！"
+        countdown_el.textContent = `[あと${Math.floor((day0_open.getTime() - now.getTime()) / (1000 * 60))}分だよ！]`
+    }
+    else if(now < day1_open || now.getDate() == 6){
         countdown_el.textContent = `[あと${Math.floor((day1_open.getTime() - now.getTime()) / (1000 * 60))}分だよ！]`
     }
     else{
